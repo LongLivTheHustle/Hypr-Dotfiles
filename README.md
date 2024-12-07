@@ -28,7 +28,7 @@ Before using this configuration, ensure you have the following installed:
     
     Wine: Essential for running Windows applications.
     
-    Supergfxctl: graphics switching between Nvidia iGPU/dGPU 
+    Supergfxctl: Graphics switching between Nvidia iGPU/dGPU 
     
     Work in progress...
 Getting Started 🚀
