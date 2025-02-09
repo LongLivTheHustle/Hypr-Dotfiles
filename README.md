@@ -26,10 +26,6 @@ Before using this configuration, ensure you have the following installed:
     
     Flatpak: For installing apps from flathub.
     
-    Wine: Essential for running Windows applications.
-    
-    Supergfxctl: Graphics switching between Nvidia iGPU/dGPU 
-    
     Work in progress...
 Getting Started 🚀
 
