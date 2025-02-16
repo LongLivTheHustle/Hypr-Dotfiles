@@ -14,11 +14,11 @@ Before using this configuration, ensure you have the following installed:
     Kitty: Terminal
         
     Work in progress...
-Getting Started 🚀
+Getting Started.
 
     Clone the repository: git clone https://github.com/LongLivTheHustle/hyprland-config.git ~/.config/hypr
 
 Install the required dependencies listed above.
 Restart your exit your TTY session and restart your computer.
 
-Screenshots Coming Soon... 📸
+Screenshots Coming Soon... 
