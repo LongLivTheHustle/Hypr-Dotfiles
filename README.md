@@ -15,7 +15,7 @@ Getting Started.
     $ cd /Downloads
     $ cd Hypr-Dotfiles
     $ chmod +x install.sh
-    $ $HOME/Downloads/ags-shell-setup.sh
+    $ $HOME/Downloads/Hypr-Dotfiles/install.sh
 
 Install the required dependencies listed above.
 
