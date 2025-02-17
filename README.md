@@ -1,12 +1,9 @@
 
 Welcome to my custom Hyprland configuration, This setup is designed for Arch Linux.
 
-Requirements
-
 Before using this configuration, ensure you have the following installed:
 
     Hyprland
-    
     Arch Linux: This configuration is tailored for Arch, though it can be adapted to other distros.
         
 Getting Started.
