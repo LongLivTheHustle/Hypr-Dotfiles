@@ -13,7 +13,7 @@ Getting Started.
 
     Clone the repository: git clone https://github.com/LongLivTheHustle/Hypr-Dotfiles.git
     $ cd /Downloads
-    $ tar -xvf Hypr-Dotfiles.git
+    $ unzip Hypr-Dotfiles.zip
     $ cd Hypr-Dotfiles
     $ chmod +x install.sh
     $ $HOME/Downloads/Hypr-Dotfiles/install.sh
