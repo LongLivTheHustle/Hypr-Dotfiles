@@ -1,0 +1,197 @@
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --zen-colors-primary: {{color11}} !important;
+    --zen-primary-color: {{color11}} !important;
+    --zen-colors-secondary: {{background}} !important;
+    --zen-colors-tertiary: {{background}} !important;
+    --zen-colors-border: {{background}} !important;
+    --toolbarbutton-icon-fill: {{color15}} !important;
+    --lwt-text-color: {{foreground}} !important;
+    --toolbar-field-color: {{color14}} !important;
+    --tab-selected-textcolor: {{foreground}} !important;
+    --toolbar-field-focus-color: {{color14}} !important;
+    --toolbar-color: {{color11}} !important;
+    --newtab-text-primary-color: {{foreground}} !important;
+    --arrowpanel-color: {{color11}} !important;
+    --arrowpanel-background: {{background}} !important;
+    --sidebar-text-color: {{foreground}} !important;
+    --lwt-sidebar-text-color: {{foreground}} !important;
+    --lwt-sidebar-background-color: {{background}} !important;
+    --toolbar-bgcolor: {{background}} !important;
+    --newtab-background-color: {{background}} !important;
+    --zen-themed-toolbar-bg: {{background}} !important;
+    --zen-main-browser-background: {{background}} !important;
+  }
+
+  #permissions-granted-icon{
+    color: {{color11}} !important;
+  }
+
+  .sidebar-placesTree {
+    background-color: {{background}} !important;
+  }
+
+  #zen-workspaces-button {
+    background-color: {{background}} !important;
+  }
+
+  #TabsToolbar {
+    background-color: {{background}} !important;
+  }
+
+  #urlbar-background {
+    background-color: {{background}} !important;
+  }
+
+  .content-shortcuts {
+    background-color: {{background}} !important;
+    border-color: {{background}} !important;
+  }
+
+  .urlbarView-url {
+    color: {{color15}} !important;
+  }
+
+  #zenEditBookmarkPanelFaviconContainer {
+    background: {{background}} !important;
+  }
+
+  toolbar .toolbarbutton-1 {
+    &:not([disabled]) {
+      &:is([open], [checked]) > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack){
+        fill: {{background}};
+      }
+    }
+  }
+
+  .identity-color-blue {
+    --identity-tab-color: {{color11}} !important;
+    --identity-icon-color: {{color11}} !important;
+  }
+
+  .identity-color-turquoise {
+    --identity-tab-color: {{color14}} !important;
+    --identity-icon-color: {{color14}} !important;
+  }
+
+  .identity-color-green {
+    --identity-tab-color: {{color12}} !important;
+    --identity-icon-color: {{color12}} !important;
+  }
+
+  .identity-color-yellow {
+    --identity-tab-color: {{color13}} !important;
+    --identity-icon-color: {{color13}} !important;
+  }
+
+  .identity-color-orange {
+    --identity-tab-color: {{color14}} !important;
+    --identity-icon-color: {{color14}} !important;
+  }
+
+  .identity-color-red {
+    --identity-tab-color: {{color8}} !important;
+    --identity-icon-color: {{color8}} !important;
+  }
+
+  .identity-color-pink {
+    --identity-tab-color: {{color7}} !important;
+    --identity-icon-color: {{color7}} !important;
+  }
+
+  .identity-color-purple {
+    --identity-tab-color: {{color5}} !important;
+    --identity-icon-color: {{color5}} !important;
+  }
+}
+
+#page-action-buttons {
+display: none;
+}
+
+
+/* Url Bar  */
+#urlbar-input-container {
+background-color: var(--sfsecondary) !important;
+border: 1px solid rgba(0, 0, 0, 0) !important;
+}
+
+#urlbar-container {
+margin-left: 0 !important;
+}
+
+#urlbar[focused='true'] > #urlbar-background {
+box-shadow: none !important;
+}
+
+#navigator-toolbox {
+border: none !important;
+}
+
+/* Bookmarks bar  */
+.bookmark-item .toolbarbutton-icon {
+    display: none;
+}
+toolbarbutton.bookmark-item:not(.subviewbutton) {
+    min-width: 1.6em;
+}
+
+/* Toolbar  */
+#tracking-protection-icon-container,
+#urlbar-zoom-button,
+#star-button-box,
+#pageActionButton,
+#pageActionSeparator,
+#tabs-newtab-button,
+#back-button,
+#PanelUI-button,
+#forward-button,
+.tab-secondary-label {
+    display: none !important;
+}
+
+.urlbarView-url {
+    color: #dedede !important;
+}
+
+/* Disable elements  */
+#context-navigation,
+#context-savepage,
+#context-pocket,
+#context-sendpagetodevice,
+#context-selectall,
+#context-viewsource,
+#context-inspect-a11y,
+#context-sendlinktodevice,
+#context-openlinkinusercontext-menu,
+#context-bookmarklink,
+#context-savelink,
+#context-savelinktopocket,
+#context-sendlinktodevice,
+#context-searchselect,
+#context-sendimage,
+#context-print-selection {
+display: none !important;
+}
+
+#context_bookmarkTab,
+#context_moveTabOptions,
+#context_sendTabToDevice,
+#context_reopenInContainer,
+#context_selectAllTabs,
+#context_closeTabOptions {
+display: none !important;
+}
+
+.titlebar-buttonbox-container{ display:none }
+
+:root {
+  --sfwindow: #19171a;
+  --sfsecondary: #201e21;
+}
+
+.urlbarView {
+  display: none !important;
+}
+

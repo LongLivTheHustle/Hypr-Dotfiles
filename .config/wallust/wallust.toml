@@ -1,0 +1,92 @@
+
+
+# How the image is parse, in order to get the colors:
+# full - resized - wal - thumb -  fastresize - kmeans
+
+backend = "full"
+
+
+# This field chooses a method to use when the gathered colors aren't enough:
+# interpolation - complementary
+
+fallback_generator = "complementary"
+
+
+# What color space to use to produce and select the most prominent colors:
+# lab - labmixed - lch - lchmixed - lchansi
+
+color_space = "lab"
+
+
+# Use the most prominent colors in a way that makes sense, a scheme color palette:
+# dark - dark16 - darkcomp - ansidark - darkcomp16 - ansidark16
+# light - light16 - lightcomp - lightcomp16
+# harddark - harddark16 - harddarkcomp - harddarkcomp16
+# softdark - softdark16 - softdarkcomp - softdarkcomp16
+# softlight - softlight16 - softlightcomp - softlightcomp16
+
+palette = "harddark16"
+
+#  Difference between similar colors, used by the colorspace:
+#  1          Not perceptible by human eyes.
+#  1 - 2      Perceptible through close observation.
+#  2 - 10     Perceptible at a glance.
+#  11 - 49    Colors are more similar than opposite
+#  100        Colors are exact opposite
+
+#threshold = 11
+
+
+# Ensures a "readable contrast"
+
+check_contrast = false
+
+
+# Color saturation, between [1% and 100%]
+
+saturation = 3
+
+
+# directory usecase, all my pywal templates go here.
+dir.template = "templates/"
+dir.target = "~/.cache/wal/"
+dir.pywal = true
+
+
+[templates]
+
+pywal = { src = "pywal", dst = "~/.cache/wal/", pywal = true }
+
+color = { template = 'color.html', target = '~/.cache/color.html' }
+
+hyprland = { template = 'hyprland', target = '~/.config/hypr/config/colors.conf' }
+
+hyprlock = { template = 'hyprlock', target = '~/.config/hypr/hyprlock.conf' }
+
+kitty = { template = 'kitty', target = '~/.config/kitty/colors.conf' }
+
+steam = { template = 'steam.css', target = '~/homebrew/themes/Material You/palettes/custom_slot.css' }
+
+waybar = { template = 'waybar.css', target = '~/.config/waybar/colors.css' }
+
+vesktop = { template = 'vesktop.css', target = '~/.var/app/dev.vencord.Vesktop/config/vesktop/themes/Rounded.Wallust.Theme.css' }
+
+cava = { template = 'cava', target = '~/.config/cava/config' }
+
+rofi = { template = 'rofi.rasi', target = '~/.config/rofi/colors.rasi' }
+
+gtk3 = { template = 'gtk3.css', target = '~/.themes/Magnetic-Teal-Dark-Compact/gtk-3.0/gtk.css' }
+
+gtk4 = { template = 'gtk4.css', target = '~/.themes/Magnetic-Teal-Dark-Compact/gtk-4.0/gtk.css' }
+
+gnome-shell = { template = 'gnome-shell.css', target = '~/.themes/Magnetic-Teal-Dark-Compact/gnome-shell/gnome-shell.css' }
+
+cinnamon = { template = 'cinnamon.css', target = '~/.themes/Magnetic-Teal-Dark-Compact/cinnamon/cinnamon.css' }
+
+chrome = { template = 'chrome.css', target = '~/.zen/7q7ytoh7.Default (beta)/chrome/userChrome.css' }
+
+content = { template = 'content.css', target = '~/.zen/7q7ytoh7.Default (beta)/chrome/userContent.css' }
+
+wallustSolid = { template = 'wallustSolid.kvconfig', target = '~/.config/Kvantum/WallustSolid/WallustSolid.kvconfig' }
+
+wallust = { template = 'Wallust.svg', target = '~/.config/Kvantum/WallustSolid/WallustSolid.svg' }
