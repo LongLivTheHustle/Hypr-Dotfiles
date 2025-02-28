@@ -41,3 +41,13 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 chsh -s $(which zsh)
 sudo systemctl enable sddm.service
 sudo update-alternatives --config default-displaymanager
+
+sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/sddm-theme  /etc &> /dev/null
+sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/sddm-theme/Pine  /usr/share/sddm/themes/ &> /dev/null
+rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.themes  $HOME/ &> /dev/null
+rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.icons  $HOME/ &> /dev/null
+rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.config  $HOME/ &> /dev/null
+rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.zshrc  $HOME/ &> /dev/null
+rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.p10k.zsh  $HOME/ &> /dev/null
+rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/Wallpapers  $HOME/Pictures &> /dev/null
+rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.local  $HOME/ &> /dev/null
