@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Magnetic-Teal-Dark-Compact
+Comment=An Flat Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Magnetic-Teal-Dark-Compact
+MetacityTheme=Magnetic-Teal-Dark-Compact
+IconTheme=Tela-circle-Dark
+CursorTheme=Magnetic-cursors
+ButtonLayout=close,minimize,maximize:menu
