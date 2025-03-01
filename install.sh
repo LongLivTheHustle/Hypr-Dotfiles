@@ -19,7 +19,7 @@ else
    echo "hyprland is already installed. Moving on."
 fi
 
-yay -S --noconfirm all-repository-fonts blueman btop cava cmatrix cliphist file-roller flameshot-git flat-remix flatseal feh fuse gnome-disk-utility gnome-software flatpak-builder flatpak-kcm flatpak-xdg-utils gamemode gvfs gvfs-afc gvfs-dnssd gvfs-goa gvfs-google gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-onedrive gvfs-smb gvfs-wsdd hypridle-git hyprlock-git hyprpicker-git hyprpaper-git kitty kitty-shell-integration kitty-terminfo kvantum kvantum-qt5  mission-center nano-syntax-highlighting network-manager-applet nwg-look qt6ct qt5ct qt6 qt5 rofi-wayland sddm swww thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman tumbler vlc wallust-git waybar-cava-git wl-clipboard xdg-desktop-portal xdg-desktop-portal-gtk xfce-polkit-git python-pywal16 python-pywalfox qogir-cursor-theme pokemon-colorscripts-git
+yay -S --noconfirm all-repository-fonts blueman btop cava cmatrix cliphist file-roller flameshot-git flat-remix flatseal feh fuse gnome-disk-utility gnome-software flatpak-builder flatpak-kcm flatpak-xdg-utils gamemode gvfs gvfs-afc gvfs-dnssd gvfs-goa gvfs-google gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-onedrive gvfs-smb gvfs-wsdd hypridle-git hyprlock-git hyprpicker-git hyprpaper-git kitty kitty-shell-integration kitty-terminfo kvantum kvantum-qt5  mission-center mousepad nano-syntax-highlighting network-manager-applet nwg-look qt6ct qt5ct qt6 qt5 rofi-wayland sddm swww thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman tumbler vlc wallust-git waybar-cava-git wl-clipboard xdg-desktop-portal xdg-desktop-portal-gtk xfce-polkit-git python-pywal16 python-pywalfox pokemon-colorscripts-git uwsm qogir-cursor-theme zsh 
 
 
 # Installing package(s) with flatpak
@@ -27,9 +27,13 @@ flatpak install dev.vencord.Vesktop com.github.neithern.g4music
 
 # set theme for flatpak if installed
 sudo flatpak override --filesystem=$HOME/.themes
-sudo flatpak override --filesystem=/usr/share/icons
+sudo flatpak override --filesystem=/usr/share/icons 
 sudo flatpak override --env=GTK_THEME=Magnetic-Teal-Dark-Compact
 sudo flatpak override --env=ICON_THEME=Flat-Remix-Black-Light-darkPanel
+
+sudo systemctl enable sddm.service
+
+swww-daemon &> /dev/null
 
 echo  "SETTING UP ZSH THEMEING"
 
@@ -57,10 +61,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/cu
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
-sudo systemctl enable sddm.service
-sudo update-alternatives --config default-displaymanager
-
-sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/sddm-theme  /etc &> /dev/null
+sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/sddm-theme/sddm.conf  /etc &> /dev/null
 sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/sddm-theme/Pine  /usr/share/sddm/themes/ &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.themes  $HOME/ &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.icons  $HOME/ &> /dev/null
@@ -69,3 +70,6 @@ rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.zshrc  $HOME/ &> /dev/n
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.p10k.zsh  $HOME/ &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/Wallpapers  $HOME/Pictures &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.local  $HOME/ &> /dev/null
+
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
