@@ -21,19 +21,21 @@ fi
 
 yay -S --noconfirm all-repository-fonts blueman btop cava cmatrix cliphist fastfeth file-roller flameshot-git flat-remix flatseal feh fuse gnome-disk-utility gnome-software flatpak-builder flatpak-kcm flatpak-xdg-utils gamemode gvfs gvfs-afc gvfs-dnssd gvfs-goa gvfs-google gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-onedrive gvfs-smb gvfs-wsdd hypridle-git hyprlock-git hyprpicker-git hyprpaper-git kitty kitty-shell-integration kitty-terminfo kvantum kvantum-qt5  mission-center mousepad nano-syntax-highlighting network-manager-applet nwg-look qt6ct qt5ct qt6 qt5 rofi-wayland sddm swww thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman tumbler vlc wallust-git waybar-cava-git wl-clipboard xdg-desktop-portal xdg-desktop-portal-gtk xfce-polkit-git python-pywal16 python-pywalfox pokemon-colorscripts-git uwsm qogir-cursor-theme zsh 
 
-
 # Installing package(s) with flatpak
-flatpak install dev.vencord.Vesktop com.github.neithern.g4music
+flatpak install --user dev.vencord.Vesktop com.github.neithern.g4music
 
 # set theme for flatpak if installed
 sudo flatpak override --filesystem=$HOME/.themes
-sudo flatpak override --filesystem=/usr/share/icons 
+sudo flatpak override --filesystem=$HOME/.icons 
 sudo flatpak override --env=GTK_THEME=Magnetic-Teal-Dark-Compact
-sudo flatpak override --env=ICON_THEME=Flat-Remix-Black-Light-darkPanel
+sudo flatpak override --env=ICON_THEME=DeppinWhite-cursors
 
 sudo systemctl enable sddm.service
 
 swww-daemon &> /dev/null
+
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
 
 echo  "SETTING UP ZSH THEMEING"
 
@@ -70,6 +72,3 @@ rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.zshrc  $HOME/ &> /dev/n
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.p10k.zsh  $HOME/ &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/Wallpapers  $HOME/Pictures &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.local  $HOME/ &> /dev/null
-
-sudo systemctl enable bluetooth
-sudo systemctl start bluetooth
