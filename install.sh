@@ -20,8 +20,8 @@ else
 fi
 
 if ! command -v yay &> /dev/null; then
-echo "Installing required package(s)."
-yay -S --noconfirm all-repository-fonts blueman btop cava cmatrix cliphist file-roller flameshot-git flat-remix flatseal feh fuse gnome-disk-utility gnome-software flatpak-builder flatpak-kcm flatpak-xdg-utils gamemode gvfs gvfs-afc gvfs-dnssd gvfs-goa gvfs-google gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-onedrive gvfs-smb gvfs-wsdd hypridle-git hyprlock-git hyprpicker-git hyprpaper-git kitty kitty-shell-integration kitty-terminfo kvantum kvantum-qt5  mission-center nano-syntax-highlighting network-manager-applet nwg-look qt6ct qt5ct qt6 qt5 rofi-wayland sddm swww thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman tumbler vlc wallust-git waybar-cava-git wl-clipboard xdg-desktop-portal xdg-desktop-portal-gtk xfce-polkit-git python-pywal16 python-pywalfox qogir-cursor-theme pokemon-colorscripts-git
+   echo "Installing required package(s)."
+   yay -S --noconfirm all-repository-fonts blueman btop cava cmatrix cliphist file-roller flameshot-git flat-remix flatseal feh fuse gnome-disk-utility gnome-software flatpak-builder flatpak-kcm flatpak-xdg-utils gamemode gvfs gvfs-afc gvfs-dnssd gvfs-goa gvfs-google gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-onedrive gvfs-smb gvfs-wsdd hypridle-git hyprlock-git hyprpicker-git hyprpaper-git kitty kitty-shell-integration kitty-terminfo kvantum kvantum-qt5  mission-center nano-syntax-highlighting network-manager-applet nwg-look qt6ct qt5ct qt6 qt5 rofi-wayland sddm swww thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman tumbler vlc wallust-git waybar-cava-git wl-clipboard xdg-desktop-portal xdg-desktop-portal-gtk xfce-polkit-git python-pywal16 python-pywalfox qogir-cursor-theme pokemon-colorscripts-git
 else 
    echo "dependencies are now installed moving on."
 fi
