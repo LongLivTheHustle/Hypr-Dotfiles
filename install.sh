@@ -63,6 +63,8 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/cu
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
+sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/fonts/TTF  /usr/share/fonts/TTF &> /dev/null
+sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/fonts/OTF  /usr/share/fonts/OTF &> /dev/null
 sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/sddm-theme/sddm.conf  /etc &> /dev/null
 sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/sddm-theme/Pine  /usr/share/sddm/themes/ &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.themes  $HOME/ &> /dev/null
