@@ -57,7 +57,6 @@ if [ -d "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]; then
    rm --force -r "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
 fi
 
-chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k 
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
@@ -74,3 +73,5 @@ rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.zshrc  $HOME/ &> /dev/n
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.p10k.zsh  $HOME/ &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/Wallpapers  $HOME/Pictures &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.local  $HOME/ &> /dev/null
+
+chsh -s $(which zsh)
