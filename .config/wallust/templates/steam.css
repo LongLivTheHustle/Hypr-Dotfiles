@@ -10,14 +10,14 @@
 --md-sys-color-primary-fixed-dim-dark: {{color12}};
 --md-sys-color-on-primary-fixed-variant-dark: {{color11}};
 
---md-sys-color-secondary-dark: {{color10}};
+--md-sys-color-secondary-dark: {{color11}};
 --md-sys-color-on-secondary-dark: {{background}};
 --md-sys-color-secondary-container-dark: {{color14}};
 --md-sys-color-on-secondary-container-dark: {{foreground}};
 
 --md-sys-color-secondary-fixed-dark: {{color9}};
 --md-sys-color-on-secondary-fixed-dark: {{foreground}};
---md-sys-color-secondary-fixed-dim-dark: {{color10}};
+--md-sys-color-secondary-fixed-dim-dark: {{color3}};
 --md-sys-color-on-secondary-fixed-variant-dark: {{color11}};
 
 --md-sys-color-tertiary-dark: {{foreground}};
@@ -32,23 +32,23 @@
 
 --md-sys-color-background-dark: {{background}};
 --md-sys-color-on-background-dark: {{foreground}};
---md-sys-color-outline-dark: {{color2}};
+--md-sys-color-outline-dark: {{color3}};
 --md-sys-color-inverse-on-surface-dark: {{background}};
 --md-sys-color-inverse-surface-dark: {{foreground}};
---md-sys-color-inverse-primary-dark: {{color2}};
+--md-sys-color-inverse-primary-dark: {{color3}};
 --md-sys-color-shadow-dark: {{background}};
 --md-sys-color-surface-tint-dark: {{foreground}};
---md-sys-color-outline-variant-dark: {{color2}};
+--md-sys-color-outline-variant-dark: {{color3}};
 --md-sys-color-scrim-dark: {{background}};
 --md-sys-color-surface-dark: {{background}};
 --md-sys-color-on-surface-dark: {{foreground}};
 --md-sys-color-surface-variant-dark: {{color11}};
 --md-sys-color-on-surface-variant-dark: {{foreground}};
---md-sys-color-surface-container-highest-dark: {{color2}};
---md-sys-color-surface-container-high-dark: {{color2}};
+--md-sys-color-surface-container-highest-dark: {{color3}};
+--md-sys-color-surface-container-high-dark: {{color3}};
 --md-sys-color-surface-container-dark: {{background}};
 --md-sys-color-surface-container-low-dark: {{background}};
 --md-sys-color-surface-container-lowest-dark: {{background}};
 --md-sys-color-surface-dim-dark: {{background}};
---md-sys-color-surface-bright-dark: {{color2}};
+--md-sys-color-surface-bright-dark: {{color3}};
 }
