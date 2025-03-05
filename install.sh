@@ -64,9 +64,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 
 sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/fonts/TTF  /usr/share/fonts/TTF &> /dev/null
 sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/fonts/OTF  /usr/share/fonts/OTF &> /dev/null
-sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/sddm-theme/sddm.conf  /etc &> /dev/null
+sudo mv --force $HOME/Hypr-Dotfiles/sddm-theme/sddm.conf  /etc &> /dev/null
 sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/sddm-theme/Pine  /usr/share/sddm/themes/ &> /dev/null
-rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.config/hypr/hyprland.conf  $HOME/.config/hypr/hyprland.conf &> /dev/null
+mv --force $HOME/Hypr-Dotfiles/.config/hypr/hyprland.conf  $HOME/.config/hypr/hyprland.conf &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.themes  $HOME/ &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.icons  $HOME/ &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.config  $HOME/ &> /dev/null
