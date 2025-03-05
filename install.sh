@@ -66,6 +66,7 @@ sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/fonts/TTF  /usr/sha
 sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/fonts/OTF  /usr/share/fonts/OTF &> /dev/null
 sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/sddm-theme/sddm.conf  /etc &> /dev/null
 sudo rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/sddm-theme/Pine  /usr/share/sddm/themes/ &> /dev/null
+rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.config/hypr/hyprland.conf  $HOME/.config/hypr/hyprland.conf &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.themes  $HOME/ &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.icons  $HOME/ &> /dev/null
 rsync -av --ignore-existing --force $HOME/Hypr-Dotfiles/.config  $HOME/ &> /dev/null
