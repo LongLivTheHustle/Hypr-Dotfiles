@@ -69,7 +69,7 @@ steam = { template = 'steam.css', target = '~/homebrew/themes/Material You/palet
 
 waybar = { template = 'waybar.css', target = '~/.config/waybar/colors.css' }
 
-vesktop = { template = 'vesktop.css', target = '~/.var/app/dev.vencord.Vesktop/config/vesktop/themes/Rounded.Wallust.Theme.css' }
+vesktop = { template = 'vesktop.css', target = '~/.var/app/io.github.equicord.equibop/config/equibop/themes/Rounded.Wallust.Theme.css' }
 
 cava = { template = 'cava', target = '~/.config/cava/config' }
 
