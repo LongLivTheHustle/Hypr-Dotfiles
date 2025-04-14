@@ -3,7 +3,7 @@
 # How the image is parse, in order to get the colors:
 # full - resized - wal - thumb -  fastresize - kmeans
 
-backend = "full"
+backend = "thumb"
 
 
 # This field chooses a method to use when the gathered colors aren't enough:
@@ -25,7 +25,7 @@ color_space = "lab"
 # softdark - softdark16 - softdarkcomp - softdarkcomp16
 # softlight - softlight16 - softlightcomp - softlightcomp16
 
-palette = "harddark16"
+palette = "dark16"
 
 #  Difference between similar colors, used by the colorspace:
 #  1          Not perceptible by human eyes.
@@ -34,7 +34,7 @@ palette = "harddark16"
 #  11 - 49    Colors are more similar than opposite
 #  100        Colors are exact opposite
 
-#threshold = 11
+#threshold = 10
 
 
 # Ensures a "readable contrast"
@@ -44,7 +44,7 @@ check_contrast = false
 
 # Color saturation, between [1% and 100%]
 
-saturation = 3
+saturation = 0
 
 
 # directory usecase, all my pywal templates go here.
@@ -83,9 +83,9 @@ gnome-shell = { template = 'gnome-shell.css', target = '~/.themes/Magnetic-Teal-
 
 cinnamon = { template = 'cinnamon.css', target = '~/.themes/Magnetic-Teal-Dark-Compact/cinnamon/cinnamon.css' }
 
-chrome = { template = 'chrome.css', target = '~/.zen/7q7ytoh7.Default (beta)/chrome/userChrome.css' }
+chrome = { template = 'chrome.css', target = '~/.zen/kqlq511r.Default (release)/chrome/userChrome.css' }
 
-content = { template = 'content.css', target = '~/.zen/7q7ytoh7.Default (beta)/chrome/userContent.css' }
+content = { template = 'content.css', target = '~/.zen/kqlq511r.Default (release)/chrome/userContent.css' }
 
 wallustSolid = { template = 'wallustSolid.kvconfig', target = '~/.config/Kvantum/WallustSolid/WallustSolid.kvconfig' }
 
