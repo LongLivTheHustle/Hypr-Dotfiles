@@ -1,4 +1,4 @@
-![Screenshot_2024-10-07-23-34-21_](hyprlandbanner.jpg)
+![Banner1_](hyprlandbanner.jpg)
 
 
 Welcome to my custom Hyprland configuration, This setup is designed for Arch Linux using a nvidia device.
