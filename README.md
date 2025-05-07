@@ -1,11 +1,11 @@
 ![Banner1_](hyprlandbanner.jpg)
 
 
-Welcome to my custom Hyprland configuration,
+Welcome to my custom Hyprland configuration.
 
-Before using this configuration, ensure you have the following.
+Before using this configuration ensure you are using Arch.
 
-Arch. though, i might adapt it  to other distros '(Highly unlikely though)'.
+Though, i might adapt it  to other distros '(Highly unlikely though)'.
         
 Getting Started.
 
@@ -15,6 +15,6 @@ Getting Started.
     $ $HOME/Hypr-Dotfiles/install.sh
 
 
-When it is finished  exit your TTY sessio and let you sysetem restart.
+When it is finished  exit your TTY session and restart your sysetem.
 
 Screenshots Coming Soon... 
