@@ -1,11 +1,11 @@
 ![Banner1_](hyprlandbanner.jpg)
 
 
-Welcome to my custom Hyprland configuration, This setup is designed for Arch Linux using a nvidia device.
+Welcome to my custom Hyprland configuration,
 
 Before using this configuration, ensure you have the following.
 
- Arch Linux: This configuration is tailored for Arch, though i might adapt it  to other distros '(Highly unlikely though!)'.
+Arch. though, i might adapt it  to other distros '(Highly unlikely though)'.
         
 Getting Started.
 
