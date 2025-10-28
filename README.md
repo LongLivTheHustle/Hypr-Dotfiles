@@ -19,6 +19,8 @@ When it is finished  exit your TTY session and restart your sysetem.
 
 Video Coming Soon... 
 
-![screenshot1_](2025-10-06_11-24.png)
+![preview1_](2025-10-06_11-24.png)
 
-![screenshot2_](2025-10-06_04-21.png)
+![preview2_](2025-10-06_04-21.png)
+
+![preview3_](2025-10-28_18-41.png)
