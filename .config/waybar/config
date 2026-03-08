@@ -1,0 +1,143 @@
+{
+	"layer": "top",
+	"modules-left": ["mpris","cava"],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": ["cpu","memory","pulseaudio","custom/weather","clock","tray","custom/power"],
+	
+
+	"pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-muted": "⡇ ",
+        "format-icons": {
+        "alsa_output.pci-0000_00_1f.3.analog-stereo": "⡇ ",
+        "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "⡇ ",
+        "headphone": "⡇ ",
+        "hands-free": "⡇ ",
+        "headset": "⡇ ",
+        "phone": "⡇ ",
+        "phone-muted": "⡇ ",
+        "portable": "⡇ ",
+        "car": "⡇ ",
+        "default": ["⡇ ", "⡇ ", "⡇ "]
+        },
+        "scroll-step": 2,
+        "on-click-right": "pavucontrol",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        },
+
+        "hyprland/workspaces": {
+	"active-only": false,
+	"all-outputs": true,
+	"format": "{icon}",
+	"on-click": "activate",
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
+	"show-special": true,
+        "persistent-workspaces": {
+        "*": 5
+	},
+	"format": "{icon}",
+	"format-icons": {
+        "active": "<span font='12'>󰮯</span>",
+        "empty": "<span font='8'></span>",
+        "default": "󰊠",
+	},
+        },
+
+	"tray":{
+	"icon-size":18,
+	"spacing": 8,
+	},
+
+        "custom/weather": {
+        "exec": "~/.config/waybar/scripts/weather.sh",
+        "return-type": "json",
+        "format": "⡇ {}",
+        "tooltip": true,
+        "interval": 3600
+        },
+        "clock": {
+	"interval": 1,
+        "format": "⡇  {:%I:%M %p} ⡇",
+        "format-alt": "⡇  {:%A, %B %d, %Y  %I:%M %p} ⡇",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+        "mode"          : "year",
+        "mode-mon-col"  : 3,
+        "weeks-pos"     : "right",
+        "on-scroll"     : 1,
+        "format": {
+        "months":     "<span color='#ffead3'><b>{}</b></span>",
+        "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+        "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+        }
+        },
+
+        "actions":  {
+        "on-click-right": "mode",
+        "on-scroll-up": "tz_up",
+        "on-scroll-down": "tz_down",
+        "on-scroll-up": "shift_up",
+        "on-scroll-down": "shift_down"
+        }
+        },   
+
+        "cpu": {
+        "interval": 1,
+        "format": " {usage}%",
+        "on-click-right": "missioncenter", 
+        "format-alt": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{icon8}  {usage}%",
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        },
+
+        "memory": {
+        "interval": 1,
+        "format": "⡇ ⏱ {}%",
+        "on-click-right": "kitty btop",    
+        },
+
+        "mpris": {
+	"interval": 1,
+	"format": "{player_icon} <i>{dynamic}</i>",
+	"format-paused": "{status_icon} <i>{dynamic}</i>",
+	"on-click-middle": "playerctl play-pause",
+	"on-click": "playerctl previous",
+	"on-click-right": "playerctl next",
+	"player-icons": {
+	"default": " ",
+	},
+	"status-icons": {
+	"paused": " ",
+	"playing": "",
+	"stopped": "",
+	},
+	"max-length": 50,
+        },
+
+        "cava": {
+        "framerate": 60,
+        "autosens": 1,
+        "sensitivity": 1,
+        "bars": 18,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 20000,
+        "method": "pipewire",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": true,
+        "waves": true,
+        "noise_reduction": 0.7,
+        "input_delay": 1,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        },
+
+        "custom/power":{
+        "format": "⡇  󰈸",
+        "on-click": "bash ~/.config/rofi/powermenu/powermenu.sh",
+        },        
+}

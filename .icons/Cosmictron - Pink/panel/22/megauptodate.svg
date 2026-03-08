@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="22"
+   height="22"
+   viewBox="0 0 22 22"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="megauptodate.svg"
+   inkscape:version="1.2.2 (1:1.2.2+202305151915+b0a8486541)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:x="adobe:ns:meta/">
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="23.227273"
+     inkscape:cx="11.430528"
+     inkscape:cy="11.172211"
+     inkscape:window-width="1920"
+     inkscape:window-height="1012"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <metadata
+     id="metadata2">
+<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>    <x:xmpmeta
+       x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+      <rdf:RDF>
+        <rdf:Description
+           rdf:about="" />
+      </rdf:RDF>
+    </x:xmpmeta>
+<?xpacket end="w"?>  </metadata>
+  <defs
+     id="defs9">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect15"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+    <linearGradient
+       id="linear-gradient"
+       x1="10"
+       x2="10"
+       y2="20"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#ff1a21"
+         id="stop4" />
+      <stop
+         offset="1"
+         stop-color="#d90007"
+         id="stop6" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath11">
+      <path
+         style="display:none;opacity:0.85;fill:#ffffff;fill-rule:evenodd"
+         id="path13"
+         data-name="Shape 2 copy"
+         class="cls-2"
+         d="m 15,14.45 a 0.3,0.3 0 0 1 -0.3,0.3 h -1.256 a 0.3,0.3 0 0 1 -0.3,-0.3 v -3.922 a 0.037,0.037 0 0 0 -0.063,-0.027 l -2.666,2.7 a 0.587,0.587 0 0 1 -0.838,0 L 6.915,10.5 a 0.037,0.037 0 0 0 -0.063,0.027 v 3.923 a 0.3,0.3 0 0 1 -0.3,0.3 H 5.3 A 0.3,0.3 0 0 1 5,14.45 V 7.55 A 0.3,0.3 0 0 1 5.3,7.25 H 6.162 A 0.589,0.589 0 0 1 6.581,7.426 L 9.9,10.781 a 0.147,0.147 0 0 0 0.21,0 L 13.424,7.425 A 0.589,0.589 0 0 1 13.843,7.249 H 14.7 a 0.3,0.3 0 0 1 0.3,0.3 v 6.9 z" />
+      <path
+         id="lpe_path-effect15"
+         style="opacity:0.85;fill:#ffffff;fill-rule:evenodd"
+         class="powerclip"
+         d="M -5,-4 H 25 V 26 H -5 Z m 20,18.45 v -10e-4 -6.9 a 0.3,0.3 0 0 0 -0.3,-0.3 h -0.857 a 0.589,0.589 0 0 0 -0.419,0.176 l -3.314,3.356 a 0.147,0.147 0 0 1 -0.21,0 L 6.581,7.426 A 0.589,0.589 0 0 0 6.162,7.25 H 5.3 A 0.3,0.3 0 0 0 5,7.55 v 6.9 a 0.3,0.3 0 0 0 0.3,0.3 h 1.252 a 0.3,0.3 0 0 0 0.3,-0.3 V 10.527 A 0.037,0.037 0 0 1 6.915,10.5 l 2.662,2.701 a 0.587,0.587 0 0 0 0.838,0 l 2.666,-2.7 a 0.037,0.037 0 0 1 0.063,0.027 v 3.922 a 0.3,0.3 0 0 0 0.3,0.3 H 14.7 a 0.3,0.3 0 0 0 0.3,-0.3 z" />
+    </clipPath>
+  </defs>
+  <path
+     fill="url(#linear-gradient)"
+     class="cls-1"
+     id="circle11"
+     style="fill:#ffffff;fill-opacity:1"
+     clip-path="url(#clipPath11)"
+     inkscape:path-effect="#path-effect15"
+     sodipodi:type="arc"
+     sodipodi:cx="10"
+     sodipodi:cy="11"
+     sodipodi:rx="10"
+     sodipodi:ry="10"
+     d="M 20,11 A 10,10 0 0 1 10,21 10,10 0 0 1 0,11 10,10 0 0 1 10,1 10,10 0 0 1 20,11 Z"
+     transform="matrix(1.0972274,0,0,1.0932721,0,-1.0083958)" />
+</svg>

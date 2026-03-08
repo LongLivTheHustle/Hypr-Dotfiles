@@ -1,0 +1,10 @@
+Type=X-GNOME-Metatheme
+[Desktop Entry]
+Name=Wal-GTK
+Comment=An Flat Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Wal-GTK
+MetacityTheme=Wal-GTK
+ButtonLayout=close,minimize,maximize:menu

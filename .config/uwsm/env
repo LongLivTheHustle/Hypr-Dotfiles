@@ -1,0 +1,38 @@
+# ** // NVIDIA \\ **
+
+export GBM_BACKEND=nvidia-drm
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
+export LIBVA_DRIVER_NAME=nvidia
+export NVD_BACKEND=direct
+export __GL_GSYNC_ALLOWED=1
+export __GL_VRR_ALLOWED=1
+export WLR_RENDERER=vulkan
+
+# ** // ELECTRON \\ **
+
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
+
+# ** // QT VARIABLES \\ **
+
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_QPA_PLATFORMTHEME=qt6ct
+export QT_SCALE_FACTOR=1
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+export QT_NO_XDG_PORTAL=1
+
+# ** // BACKEND VARIABLES \\ **
+
+export CLUTTER_BACKEND=wayland
+export SDL_VIDEODRIVER=wayland
+export QT_QPA_PLATFORM=wayland
+export GDK_BACKEND=wayland,x11
+
+# ** // FIREFOX \\ **
+
+export MOZ_DISABLE_RDD_SANDBOX=1
+
+# ** // GTK VARIABLES \\ **
+
+export XCURSOR_SIZE=20
+export GDK_SCALE=1
+export GDK_DPI_SCALE=1

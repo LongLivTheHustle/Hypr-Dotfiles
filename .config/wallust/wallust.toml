@@ -1,0 +1,70 @@
+# How the image is parse, in order to get the colors:
+# full - resized - wal - thumb -  fastresize - kmeans
+
+backend = "wal"
+
+# What color space to use to produce and select the most prominent colors:
+# lab - labmixed - lch - lchmixed - salience
+
+color_space = "lab"
+
+# Use the most prominent colors in a way that makes sense, a scheme color palette:
+# dark - dark16 - darkcomp - darkcomp16
+# light - light16 - lightcomp - lightcomp16
+# harddark - harddark16 - harddarkcomp - harddarkcomp16
+# softdark - softdark16 - softdarkcomp - softdarkcomp16
+# softlight - softlight16 - softlightcomp - softlightcomp16
+# saliencedark - saliencedarkbalanced - saliencedarkdistributed - saliencedarklow (each has the 16 variations)
+# salienceligh - saliencelightbalanced - saliencelightdistributed - saliencelightlow (each has the 16 variations)
+
+palette = "harddark16"
+
+# Ensures a "readable contrast" (OPTIONAL, disabled by default)
+# Should only be enabled when you notice an unreadable contrast frequently happening
+# with your images. The reference color for the contrast is the background color.
+# check_contrast = true
+
+# Color saturation, between [1% and 100%] (OPTIONAL, disabled by default)
+# usually something higher than 50 increases the saturation and below
+# decreases it (on a scheme with strong and vivid colors)
+
+#saturation = 15
+
+# Alpha value for templating, by default 100 (no other use whatsoever)
+
+alpha = 100
+
+# Disables hooks completly
+
+# no_hooks = true
+
+[templates]
+
+pywal = { src = "pywal", dst = "~/.cache/wal/", pywal = true }
+wal = { template = 'pywal-colors', target = '~/.cache/wal/colors' }
+wal2 = { template = 'pywal-colors.json', target = '~/.cache/wal/colors.json' }
+conf = { template = 'wal', target = '~/.cache/wal.txt' }
+vscode = { template = 'vscode.json', target = '~/.cache/wal/colors-vscode.json' }
+spotify = { template = 'spotify.ini', target = '~/.config/spicetify/Themes/Comfy/color.ini' }
+color = { template = 'color.html', target = '~/.cache/color.html' }
+hyprland = { template = 'hyprland', target = '~/.config/hypr/config/colors.conf' }
+hyprlock = { template = 'hyprlock', target = '~/.config/hypr/hyprlock.conf' }
+kitty = { template = 'kitty', target = '~/.config/kitty/colors.conf' }
+steam = { template = 'steam.css', target = '~/homebrew/themes/Material You/palettes/custom_slot.css' }
+discord = { template = 'discord.css', target = '~/.config/equibop/themes/Wal.css' }
+cava = { template = 'cava', target = '~/.config/cava/config' }
+rofi = { template = 'rofi.rasi', target = '~/.config/rofi/colors.rasi' }
+waybar = { template = 'waybar.css', target = '~/.config/waybar/colors.css' }
+gtk-3 = { template = 'gtk-3.css', target = '~/.themes/Wal-GTK/gtk-3.0/gtk.css' }
+gtk-4 = { template = 'gtk-4.css', target = '~/.themes/Wal-GTK/gtk-4.0/gtk.css' }
+gtk-3-dark = { template = 'gtk-3-dark.css', target = '~/.themes/Wal-GTK/gtk-3.0/gtk-dark.css' }
+gtk-4-dark = { template = 'gtk-4-dark.css', target = '~/.themes/Wal-GTK/gtk-4.0/gtk-dark.css' }
+gnome-shell = { template = 'gnome-shell.css', target = '~/.themes/Wal-GTK/gnome-shell/gnome-shell.css' }
+cinnamon = { template = 'cinnamon.css', target = '~/.themes/Wal-GTK/cinnamon/cinnamon.css' }
+
+[hooks]
+
+notif = 'notify-send "Theme Applied"'
+
+# Run commands when wallust is invoked. Useful to avoid scripting.
+# wallpaper = """awww img "$(find ~/Pictures/Wallpapers -iregex '.*.\\(jpg\\|jpeg\\|png\\|gif\\)' -type f | shuf -n 1)" """

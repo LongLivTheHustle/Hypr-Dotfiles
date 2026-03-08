@@ -1,0 +1,187 @@
+@import '../../.config/waybar/colors.css';
+
+* {
+  font-family: "JetBrains Mono NL ExtraBold,FontAwesome6Free, SymbolsNerdFont" ;
+  font-size: 12px;
+  color: @color14;
+  min-height: 12px;
+}
+
+.modules-left {
+               margin-left: 12px;
+               margin-right: 0px;
+               margin-top: 10px;
+               margin-bottom: 0px;
+	       padding-top: 0px;
+	       padding-bottom: 0px;
+	       padding-right: 4px;
+	       padding-left: 12px;
+	       border-right: 2px;
+	       border-left: 2px;
+	       border-top: 2px;
+	       border-bottom: 2px;
+	       border-style: solid;
+	       border-color: @color12;
+	       border-radius: 16px;
+	       color: @color14;
+	       background-color: @background;
+}
+
+.modules-center {
+               margin-left: 0px;
+               margin-right: 0px;
+               margin-top: 10px;
+               margin-bottom: 0px;
+	       padding-top: 0px;
+	       padding-bottom: 0px;
+	       padding-right: 4px;
+	       padding-left: 12px;
+	       border-right: 2px;
+	       border-left: 2px;
+	       border-top: 2px;
+	       border-bottom: 2px;
+	       border-style: solid;
+	       border-color: @color12;
+	       border-radius: 16px;
+	       color: @color14;
+	       background-color: @background;
+}
+
+.modules-right {
+               margin-left: 0px;
+               margin-right: 12px;
+               margin-top: 10px;
+               margin-bottom: 0px;
+	       padding-top: 0px;
+	       padding-bottom: 0px;
+	       padding-right: 4px;
+	       padding-left: 12px;
+	       border-right: 2px;
+	       border-left: 2px;
+	       border-top: 2px;
+	       border-bottom: 2px;
+	       border-style: solid;
+	       border-color: @color12;
+	       border-radius: 16px;
+	       color: @color14;
+	       background-color: @background;
+}
+
+window#waybar,
+window#waybar.empty,
+window#waybar.empty #window {
+                            background-color: transparent;
+                            padding: 0px;
+                            border: 0px;
+}
+
+tooltip {
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: @color12;
+	color: @color14;
+	opacity: 0.8;
+	background: @background;
+}
+
+tooltip label{
+	     color: @background4;
+}
+
+#workspaces button.active {
+	                  color: @color14;
+   	                  border-radius: 15px 15px 15px 15px;
+   	                  padding-left: 8px;
+   	                  padding-right: 6px;
+   	                  animation: gradient_f 20s ease-in infinite;
+   	                  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces {
+	    background: @transparent;
+	    transition: none;
+}
+
+#workspaces button {
+	           transition: none;
+	           background: transparent;
+}
+
+#workspaces button.occupied {
+	                    transition: none;
+	                    background: transparent;
+}
+
+#workspaces button.focused {
+	                   color: @color14;
+}
+
+#workspaces button:hover {
+	                 box-shadow: inherit;
+	                 text-shadow: inherit;
+}
+
+#workspaces button.focused:hover {
+                                 color: @color14;
+}
+
+@keyframes blink {
+    to {
+       background-color: @transparent;
+       color: @color14;
+    }
+}
+
+#cava {
+      padding-left: 10px;
+      padding-right: 10px;   
+
+}
+
+#custom-player {
+               padding-left: 10px;
+               padding-right: 10px;   
+
+}
+
+#calendar {
+       color: @color14;
+       padding-left: 10px;
+       padding-right: 10px;
+}
+
+#clock {
+       color: @color14;
+       padding-left: 10px;
+       padding-right: 10px;
+}
+
+#cpu {
+     margin-right: 10px;
+}
+
+#memory {
+        margin-right: 10px;
+}
+
+#mpris {
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-bottom: 0px;
+	padding-right: 0px;
+	transition: none;
+}
+
+#pulseaudio {
+        margin-right: 10px;
+}
+
+#tray {
+      margin-right: 10px;
+}
+
+#custom-power {
+              margin-right: 10px;
+}

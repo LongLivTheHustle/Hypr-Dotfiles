@@ -1,0 +1,9 @@
+{
+  "wallpapers_dir": "/home/monty/Pictures/Wallpapers/Animated",
+  "selected": "Wal-09.mp4",
+  "output": "DP-2",
+  "mpv_options": "loop no-audio gpu-context=wayland vid=1 hwdec=auto-safe",
+  "layer": "background",
+  "recursive": false,
+  "enable_ipc": true
+}
